@@ -1,0 +1,26 @@
+
+  
+  .containerP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  .card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: green;
+  }
+  
+  .card img {
+    width: 500px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  

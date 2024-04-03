@@ -1,0 +1,118 @@
+.containerb {
+    max-width: 1500px;
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    
+}
+
+.book-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.book-card {
+    flex: 0 0 48%;
+   
+ 
+  
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: aquamarine;
+}
+
+.book-card img {
+    width: 100%; /* Set width to 100% */
+    max-height: 100%; /* Set max height to 100% of parent */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.book-card h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  
+    font-family: cursive;
+    
+    color: green;
+}
+
+.book-card p {
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    padding: 15px 30px;
+    margin-right: 0px;
+    margin-left: 150px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.action-buttons button:hover {
+    background-color: green;
+}
+
+.book-card1 {
+    flex: 0 0 48%;
+    
+  
+    
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.book-card1 h4 {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px; 
+    font-family: cursive;
+    color: red;}
+
+.book-card1 p {
+        font-size: 25px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+        line-height: 1.5; /* Adjust line height for readability */
+        margin-bottom: 10px; /* Add space below paragraphs */
+        padding: 0; /* Reset padding */
+        font-family: cursive;
+        color: green;
+        text-align: center;
+    }
+
+    .book-card1 h3 {
+        font-size: 25px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+        line-height: 1.5; /* Adjust line height for readability */
+        margin-bottom: 10px; /* Add space below paragraphs */
+        padding: 0; /* Reset padding */
+        font-family: cursive;
+        color: blueviolet;
+    }
+
+    .book-card1 h2 {
+        font-size: 40px; /* Adjust font size as needed */
+        color: #333; /* Set text color */
+        line-height: 1.5; /* Adjust line height for readability */
+        margin-bottom: 10px; /* Add space below paragraphs */
+        padding: 0; /* Reset padding */
+        font-family: cursive;
+        color: blue
+        ;
+    }
+    
+
+    

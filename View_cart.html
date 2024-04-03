@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Suggestion Home</title>
+    <link rel="stylesheet" href='{% static "suggestion/css/slp.css" %}'>
+    <link rel="stylesheet" href='{% static "suggestion/css/bootstrap.css" %}'>
+    <link rel="stylesheet" href='{% static "suggestion/css/font.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href='{% static "suggestion/css/cool.css" %}'>
+
+
+
+
+</head>
+<body class="colour">
+    <div class="navbar">
+        <a href="Book Suggestion"><i class="fa-solid fa-book-open"></i>Books</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'about us' %}">About Us</a> 
+        <a href="{% url 'h' %}">Help</a> 
+        {% if request.user.is_authenticated %}
+        <a href="{% url 'profile' %}">Welcome {{ request.user }}</a> 
+        <a href="{% url 'view_cart' %}"><i class="fa-solid fa-cart-shopping"></i></a> 
+        <a href="{% url 'logout' %}">Logout</a> 
+        {% else %}
+        <a href="{% url 'login' %}">Log In</a> 
+        <a href="{% url 'signup' %}">Sign Up</a>
+        {% endif %}
+    </div>
+    <br>
+    <br>
+    {% for item in cart_items %}
+    <div class="card rounded-3 mb-4">
+        <div class="card-body p-4">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img src="{{item.product.Book_Image.url}}" class="fixed-image img-fluid rounded-3" alt="Product Image">
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">{{item.product.Book_Name}}</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
+                    <button class="btn btn-link px-2"><a href="{% url 'delete_quantity' item.id %}"><i class="fas fa-minus"></i></a></button>
+                    <div class="quantity-display">
+                        {{item.quantity}}
+                    </div>
+                    <button class="btn btn-link px-2"><a href="{% url 'add_quantity' item.id %}"><i class="fas fa-plus"></i></a></button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2">
+                    <h5 class="mb-0">$ {{ item.product.price_and_quantity_total }}</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="{% url 'delete_K' item.id %}" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% for item in cart_itemsl %}
+    <div class="card rounded-3 mb-4">
+        <div class="card-body p-4">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img src="{{item.product.Book_Image.url}}" class="fixed-image img-fluid rounded-3" alt="Product Image">
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">{{item.product.Book_Name}}</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
+                    <button class="btn btn-link px-2"><a href="{% url 'delete_quantityL' item.id %}"><i class="fas fa-minus"></i></a></button>
+                    <div class="quantity-display">
+                        {{item.quantity}}
+                    </div>
+                    <button class="btn btn-link px-2"><a href="{% url 'add_quantityL' item.id %}"><i class="fas fa-plus"></i></a></button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2">
+                    <h5 class="mb-0">$ {{ item.product.price_and_quantity_total}}</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="{% url 'delete_L' item.id %}" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% for item in cart_itemsS %}
+    <div class="card rounded-3 mb-4">
+        <div class="card-body p-4">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img src="{{item.product.Book_Image.url}}" class="fixed-image img-fluid rounded-3" alt="Product Image">
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">{{item.product.Book_Name}}</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
+                    <button class="btn btn-link px-2"><a href="{% url 'delete_quantityS' item.id %}"><i class="fas fa-minus"></i></a></button>
+                    <div class="quantity-display">
+                        {{item.quantity}}
+                    </div>
+                    <button class="btn btn-link px-2"><a href="{% url 'add_quantityS' item.id %}"><i class="fas fa-plus"></i></a></button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2">
+                    <h5 class="mb-0">$ {{ item.product.price_and_quantity_total }}</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="{% url 'delete_S' item.id %}" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% for item in cart_itemsT %}
+    <div class="card rounded-3 mb-4">
+        <div class="card-body p-4">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <img src="{{item.product.Book_Image.url}}" class="fixed-image img-fluid rounded-3" alt="Product Image">
+                </div>
+                
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <p class="lead fw-normal mb-2">{{item.product.Book_Name}}</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
+                    <button class="btn btn-link px-2"><a href="{% url 'delete_quantityT' item.id %}"><i class="fas fa-minus"></i></a></button>
+                    <div class="quantity-display">
+                        {{item.quantity}}
+                    </div>
+                    <button class="btn btn-link px-2"><a href="{% url 'add_quantityT' item.id %}"><i class="fas fa-plus"></i></a></button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2">
+                    <h5 class="mb-0">$ {{ item.product.price_and_quantity_total }}</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <a href="{% url 'delete_T' item.id %}" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- ====================== Order Summmary =======================================-->
+
+    {% comment %} <div class="container a">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3 class="text-xs-center"><strong>Order summary</strong></h3>
+                    </div>
+                    <div class="card-block">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Book Name</strong></td>
+                                        <td class="text-xs-center"><strong>Book Price</strong></td>
+                                        <td class="text-xs-center"><strong>Book Quantity</strong></td>
+                                        <td class="text-xs-right"><strong>Total</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in cart_items %}
+                                    <tr>
+                                        <td>{{item.product.Book_Name}}</td>
+                                        <td class="text-xs-center">${{item.product.Book_Price }}</td>
+                                        <td class="text-xs-center">{{item.quantity}}</td>
+                                        <td class="text-xs-right">${{item.product.price_and_quantity_total}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% for item in cart_itemsl %}
+                                    <tr>
+                                        <td>{{item.product.Book_Name}}</td>
+                                        <td class="text-xs-center">${{item.product.Book_Price }}</td>
+                                        <td class="text-xs-center">{{item.quantity}}</td>
+                                        <td class="text-xs-right">${{item.product.price_and_quantity_total}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% for item in cart_itemsS %}
+                                    <tr>
+                                        <td>{{item.product.Book_Name}}</td>
+                                        <td class="text-xs-center">${{item.product.Book_Price }}</td>
+                                        <td class="text-xs-center">{{item.quantity}}</td>
+                                        <td class="text-xs-right">${{item.product.price_and_quantity_total}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% for item in cart_itemsT %}
+                                    <tr>
+                                        <td>{{item.product.Book_Name}}</td>
+                                        <td class="text-xs-center">${{item.product.Book_Price }}</td>
+                                        <td class="text-xs-center">{{item.quantity}}</td>
+                                        <td class="text-xs-right">${{item.product.price_and_quantity_total}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    <tr>
+                                        <td class="highrow"></td>
+                                        <td class="highrow"></td>
+                                        <td class="highrow text-xs-center"><strong>Subtotal</strong></td>
+                                        <td class="highrow text-xs-right">$<b>{{total_value}}</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="emptyrow"></td>
+                                        <td class="emptyrow"></td>
+                                        <td class="emptyrow text-xs-center"><strong>Shipping</strong></td>
+                                        <td class="emptyrow text-xs-right">$50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="emptyrow"><i class="fa fa-barcode iconbig"></i></td>
+                                        <td class="emptyrow"></td>
+                                        <td class="emptyrow text-xs-center"><strong>Total</strong></td>
+                                        <td class="emptyrow text-xs-right">$<b>{{Final_value}}</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> {% endcomment %}
+  
+
+
+
+
+  
+
+    <div class="cool">
+        <div>
+            <a href="{% url 'address' %}" class="btn btn-success btn-block btn-lg">Proceed to Pay</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,439 @@
+.colour {
+    background-color: rgba(50, 205, 50, 0.455);
+    /* background-image: url('/static/suggestion/images/img_53.jpg.jpg'); */
+    background-size: contain;
+    background-position: center center;
+
+   
+   
+}
+
+.navbar {
+    background-color: rgba(128, 0, 128, 0.408);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 12px;
+    
+}
+
+.navbar a:hover {
+    background-color: greenyellow;
+}
+
+.search-container {
+    width: 60%;
+    margin-top: 200px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+    margin-right: 500px;
+  /* Center the search container */
+    text-align: center; /* Center the input and button */
+    
+   
+}
+
+.search-container input[type=text] {
+    width: 70%; /* Adjust as needed */
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: aqua;
+}
+.search-container input[type=text]:hover {
+    background-color: greenyellow;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: greenyellow; /* Change the background color on hover */
+}
+
+.search-container h3 {
+    text-align: center;
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between rectangles */
+}
+
+.rectangle {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid #bc0ff1;
+    overflow: hidden; /* Ensure images fit inside rectangles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rectangle img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu {
+    position: relative;
+    /* width: 100px; */
+    border-radius: 10px;
+   
+    overflow: hidden; /* Ensure images fit inside rectangles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu input{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.menu input:hover{
+    background: greenyellow; 
+
+}
+
+
+
+.carousel {
+
+    height:550px;
+    
+    }
+    
+    .carousel-inner  {
+    
+    height:550px;
+   
+    
+    object-fit: contain;
+    background-color: rgba(0, 119, 128, 0.418);
+    
+    }
+
+    .d-block{
+        height: 550px;
+        width: 70%;
+        margin-left: 226px;
+       
+        
+      
+    }
+
+   
+
+    .site-footer {
+        background-color: rgba(224, 35, 111, 0.866);
+        padding: 50px 0;
+        width: 100vw; /* Change this line */
+    }
+    
+    .site-footer h3 {
+        color: whitesmoke;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .site-footer p {
+        color: azure;
+    }
+    
+    .footer-links li {
+        list-style: none;
+        margin-bottom: 10px;
+        color: azure;
+    }
+    
+    .footer-links a {
+        color: azure;
+        text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+        color: greenyellow;
+    }
+    
+    .footer-bottom {
+        background-color: #343a40;
+        padding: 10px 0;
+        color: #fff;
+    }
+    
+    .footer-bottom p {
+        margin-bottom: 0;
+    }
+
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #bc0ff1;
+        height: 500px;
+        background-color: #260ff167;
+        
+    }
+    
+    .image-div {
+        flex: 1;
+        margin-right: 20px;
+        
+    }
+    
+    .image-div img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .info-div {
+        flex: 2;
+    }
+    
+    .info-div h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: azure;
+    }
+    
+    .info-div p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: azure;
+      
+    }
+
+    .info-div h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+       
+        color: azure;
+    }
+
+
+    .centered-div {
+        margin: 0 auto; /* This will horizontally center the div */
+        width: 100%; /* Ensure it occupies the full width of its parent container */
+        max-width: 600px; /* Optionally, set a max-width to prevent it from becoming too wide on larger screens */
+        border: 2px solid black; /* Add a border */
+        padding: 20px; /* Add some padding for spacing */
+        border-radius: 10px;
+        background-color: black;
+     
+    }
+
+    /* Style the signup container */
+    .signup {
+        width: 100%; /* Ensure it occupies the full width of its parent container */
+        text-align: left; /* Center align the content inside the signup div */
+        background-color: #f9f9f9; /* Background color */
+        padding: 20px; /* Add padding for spacing */
+        border-radius: 10px; /* Add rounded corners */
+        background-color: whitesmoke;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    /* Style the h1 tag */
+    .signup h1 {
+        font-size: 50px; /* Adjust font size as needed */
+        margin-bottom: 20px; /* Add margin at the bottom */
+        color: #333; /* Text color */
+        text-align: center;
+        color: red;
+        
+        font-family: cursive;
+    }
+
+    /* Style the form */
+    .signup form {
+        margin-top: 5px; /* Add margin at the top */
+        font-family: cursive;
+       
+       
+    }
+
+    /* Style the form labels */
+    .signup form label {
+        display: block; /* Display labels as block elements */
+        margin-bottom: 10px; /* Add margin below each label */
+        color: #e90e0ee3; /* Text color */
+    }
+
+    /* Style the input fields */
+    .signup form input[type="text"],
+    .signup form input[type="password"],
+    .signup form input[type="email"],
+    .signup form textarea {
+        width: 100%; /* Make form fields fill the width of the container */
+        padding: 10px; /* Add padding for spacing */
+        margin-bottom: 10px; /* Add margin at the bottom of each form field */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        border-radius: 100px;
+        background-color: whitesmoke;
+        border: 1px solid black;
+        
+        
+    }
+    .signup form input[type="text"]:hover,
+    .signup form input[type="password"]:hover,
+    .signup form input[type="email"]:hover{
+      
+        background-color: greenyellow;
+    }
+   
+
+    .signup form input[type="submit"],
+    .signup form input[type="button"] {
+        width: calc(50% - 5px); /* Make button fill the width of the container */
+        padding: 10px; /* Add padding for spacing */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+
+    /* Style the anchor tag */
+    .signup a {
+        display: inline-block; /* Display anchor tag as inline-block element */
+        text-decoration: none; /* Remove underline */
+        width: calc(50% - 5px);
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border-radius: 5px; /* Add rounded corners */
+        text-align: center;
+    }
+
+    /* Change anchor tag color on hover */
+    .signup a:hover {
+        background-color: greenyellow; /* Change link color on hover */
+    }
+
+    /* Change anchor tag color on hover */
+    
+
+    .signup form input[type="submit"]:hover,
+    .signup form input[type="button"]:hover {
+        background-color: greenyellow; 
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: black;
+        
+        
+    }
+    
+    td {
+        padding: 8px;
+        border: 1px solid azure; /* Add border to every <td> element */
+        vertical-align: middle; /* Align content vertically centered */
+        font-family: cursive;
+        color: azure;
+    }
+    
+    th {
+        padding: 8px;
+        border: 1px solid azure;
+        vertical-align: middle; /* Align content vertically centered */
+        font-family: cursive;
+        color: gold;
+    }
+    th {
+        background-color: rgba(255, 0, 0, 0.444);
+    }
+    
+    tr:hover {
+        background-color: yellowgreen;
+    }
+    
+    td img {
+        max-width: 100px;
+        max-height: 100px;
+        display: inline-block;
+        vertical-align: middle; /* Align images vertically centered with text */
+        margin-right: 10px; /* Add some space between image and text */
+    }
+    
+    .buy-btn {
+        padding: 6px 12px;
+        background-color: #59af4c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .buy-btn:hover {
+        background-color: red;
+    }
+
+    .h1 {
+        text-align: center; /* Align text to center */
+        color: azure; /* Text color */
+        font-family: cursor, sans-serif; /* Font family */
+    }
+
+    .h1 h1 {
+        text-align: center; /* Align text to center */
+        color: yellow; /* Text color */
+        font-family: cursive; /* Font family */
+    }
+
+    .fixed-image {
+        width: 100px; /* Adjust the width as needed */
+        height: 100px; /* Adjust the height as needed */
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+  
+
+    
+
+  
+    
+ 
+    
+ 
+    
+
+
+  
+
+
+
+
+
+
+
+  
+ 
+  
+  

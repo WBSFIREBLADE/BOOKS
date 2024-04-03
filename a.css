@@ -1,0 +1,237 @@
+.containerB {
+    margin: 20px auto;
+    width: 100%; /* Adjust width as needed */
+    text-align: center;
+    border-radius: 100px;
+    background-color: gold;
+}
+.containerB h1{
+    font-family: cursive;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.buttons a {
+    text-decoration: none;
+   
+}
+
+.buttons input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+  
+}
+
+.buttons input[type="button"]:hover {
+    background-color: red; /* Darker green on hover */
+}
+
+
+
+/* Profile form */
+.reg {
+   
+    padding: 10px; /* Add padding for spacing inside the border */
+    max-width: 42%; /* Set maximum width */
+    margin-left: 22px;
+   
+  
+    text-align: center;
+    margin-left: 29%;
+ 
+   
+
+}
+.reg h3{
+    font-family: cursive;
+   
+}
+
+
+.form-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+}
+
+.form-group {
+     /* Add border to form groups */
+    padding: 10px; /* Add padding for spacing inside the border */
+    margin: 10px; /* Add margin between form groups */
+    
+   
+}
+
+
+.register-button {
+    border: 1px solid #ccc; /* Add border to the register button */
+    padding: 10px 20px; /* Add padding for spacing inside the button */
+    margin-top: 10px; /* Add margin above the button */
+}
+
+.address-card {
+    border: 1px solid #ccc; /* Add border to address cards */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    padding: 15px; /* Add padding for spacing inside the border */
+    margin-bottom: 20px; /* Add margin between address cards */
+}
+
+.delete-button {
+    border: 1px solid #ccc; /* Add border to the delete button */
+    padding: 5px 10px; /* Add padding for spacing inside the button */
+    margin-top: 10px; /* Add margin above the button */
+}
+.form{
+    justify-content: center;
+    margin-left: 32.5%;
+    width: 35%;
+    font-family: cursive;
+    color: red;
+    
+}
+
+.form form{
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: yellow;
+    
+}
+.title {
+    font-family: cursive;
+    text-align: center;
+    color: red;
+    padding: 10px;
+    border-radius: 100px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"] {
+    /* Add styles to input fields */
+    border: 1px solid purple;
+    border-radius: 100px;
+    padding: 8px; /* Adjust padding for spacing inside the input fields */
+    margin-bottom: 10px; /* Add margin between input fields */
+    display: block; /* Ensure each input field appears on its own line */
+}
+
+.form select {
+    /* Add styles to select dropdown */
+    border: 1px solid purple;
+    border-radius: 100px;
+    padding: 8px; /* Adjust padding for spacing inside the select dropdown */
+    margin-bottom: 10px; /* Add margin between input fields */
+    display: block; /* Ensure each select dropdown appears on its own line */
+}
+
+.all {
+    width: 100%;
+    background-color:purple;
+    
+}
+
+.form input[type="text"]:hover,
+.form input[type="password"]:hover,
+.form input[type="email"]:hover,
+.form input[type="number"]:hover {
+    background-color: yellowgreen;
+    
+}
+
+.form select:hover {
+  background-color: yellowgreen;
+}
+
+.text-center a{
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    width: 15%;
+
+}
+
+.text-center input{
+    justify-content: space-between;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    width: 15%;
+
+}
+
+.my-div {
+    /* Define styles for the div container */
+    /* For example: */
+    text-align: center; /* Align the button horizontally */
+    font-family: cursive;
+    color: green;
+}
+
+.my-link {
+    /* Define styles for the anchor tag */
+    /* For example: */
+    display: inline-block; /* Make the anchor tag behave like a block element */
+    text-decoration: none;
+    /* Link color */
+    background-color: green; /* Button background color */
+    padding: 10px 20px; /* Button padding */
+
+    border-radius: 100px; /* Button border radius */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.my-link:hover {
+    /* Define styles for the anchor tag on hover */
+    /* For example: */
+    background-color: #ffca28; /* Change background color on hover */
+}
+
+.my-link input[type="button"] {
+    /* Define styles for the input button */
+    /* For example: */
+    display: block; /* Make the input button a block element */
+    width: 100%; /* Set button width to 100% of its container */
+    height: 100%; /* Set button height to 100% of its container */
+    border: none; /* Remove border */
+    background-color: palegreen; /* Make background transparent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.note {
+    width: 100%;
+    background-color: azure;
+    text-align: center;
+    
+
+}
+.note h3{
+    font-family: cursive;
+    color: red;
+    margin-top: 10px;
+}

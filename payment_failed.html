@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Suggestion Home</title>
+    <link rel="stylesheet" href='{% static "suggestion/css/slp.css" %}'>
+    <link rel="stylesheet" href='{% static "suggestion/css/bootstrap.css" %}'>
+    <link rel="stylesheet" href='{% static "suggestion/css/font.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href='{% static "suggestion/css/cool.css" %}'>
+
+
+
+
+</head>
+<body class="colour">
+    <div class="navbar">
+        <a href="Book Suggestion"><i class="fa-solid fa-book-open"></i>Books</a>
+        <a href="{% url 'Home' %}">Home</a>
+        <a href="{% url 'about us' %}">About Us</a> 
+        <a href="{% url 'h' %}">Help</a> 
+        {% if request.user.is_authenticated %}
+        <a href="{% url 'profile' %}">Welcome {{ request.user }}</a> 
+        <a href="{% url 'view_cart' %}"><i class="fa-solid fa-cart-shopping"></i></a> 
+        <a href="{% url 'logout' %}">Logout</a> 
+        {% else %}
+        <a href="{% url 'login' %}">Log In</a> 
+        <a href="{% url 'signup' %}">Sign Up</a>
+        {% endif %}
+    </div>
+    <br>
+    <h3>Payment Failed</h3>
+        
+    <br>
+    <br>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>About Us</h3>
+                    <p>Welcome to our book-loving community! At Books,we’re passionate about literature and believe that every book has the power to transport us to new worlds,spark our imagination, and ignite meaningful conversations, for more check out on About us.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h3>Contact Us</h3>
+                    <p>Email: ppritam805@gmail.com</p>
+                    <p>Phone: +91-9185236854</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Designed by Pritam Patil &copy; 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+
+  
+   
+   
+  
+  
+      
+      
+  
+  
+      
+
+    <script src='{% static "suggestion/js/bootstrap.js" %}'></script>
+    <script src='{% static "suggestion/js/font.js" %}'></script>
+    <script src='{% static "suggestion/js/jquery.js" %}'></script>
+    <script src='{% static "suggestion/js/popper.js" %}'></script>
+    <script src='{% static "suggestion/js/real.js" %}'></script>
+    
+</body>
+</html>

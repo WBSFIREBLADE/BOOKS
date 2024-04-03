@@ -1,0 +1,180 @@
+.containerB {
+    max-width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: palegreen;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.buttons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.buttons input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.buttons input[type="button"]:hover {
+    background-color: red;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+   
+   
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: palegreen;
+ 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid purple;
+}
+
+.card-details {
+    padding: 15px;
+    
+}
+
+.card-details h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff;
+    font-family: cursive;
+   
+}
+
+.card-details p {
+    margin: 0;
+    font-size: 14px;
+    font-family: cursive;
+    font-style: italic;
+    display: inline;
+}
+
+.pritam {
+    font-family: cursive;
+    color: yellow;
+    font-weight: 100;
+    text-align: center;
+    background-color: green;
+    overflow: hidden;
+}
+
+.sale-banner {
+    
+    width: 100%;
+    height: 20%;
+    background-color: rgb(0, 128, 0);
+    text-align: center;
+   
+    
+  }
+  .sale-banner h1 {
+    
+  color: azure;
+  font-family: cursive;
+  font-weight: 100;
+   
+    
+  }
+
+  .sale-banner h4 {
+    
+    color: yellow;
+    font-family: cursive;
+    font-weight: 100;
+    
+     
+      
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .book-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .book-card {
+        flex: 0 0 48%;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .book-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .book-card h2 {
+        margin-bottom: 10px;
+    }
+    
+    .book-card p {
+        margin-bottom: 10px;
+    }
+    
+    .action-buttons {
+        margin-top: 20px;
+    }
+    
+    .action-buttons button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .action-buttons button:hover {
+        background-color: #0056b3;
+    }
+    
+    
+
+  .cool {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+  
+  }
+
+  .cool.button {
+    text-align: center;
+    border-radius: 100px;
+  
+  }
+  
